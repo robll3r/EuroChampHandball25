@@ -2760,6 +2760,7 @@ body.is-preload #wrapper.fade-in:before {
 }
 #intro img {
   width: 100%;
+  max-width: 1536px;
 }
 #intro h1 {
   font-size: 5rem;
