@@ -6,7 +6,7 @@
 -->
 <html>
   <head>
-    <title>EUROGALERIA</title>
+    <title>SEDES</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -29,7 +29,7 @@
       <nav id="nav">
         <ul class="links">
           <li><a href="../index.html">Inicio</a></li>
-          <li class="active"><a href="galery.html">Eurogaleria</a></li>
+          <li><a href="galery.html">Eurogaleria</a></li>
           <li>
             <a
               href="https://visitasevilla.es/"
@@ -38,7 +38,7 @@
               >Ciudad</a
             >
           </li>
-          <li><a href="sedes.html">Sedes</a></li>
+          <li class="active"><a href="sedes.html">Sedes</a></li>
           <li>
             <a
               href="https://www.divisioneventosdeportivos.com/deportes/cgi.hrb?idexp=Y828S&main=alojamientos&idsubexp=J8WHV#hotel003"
@@ -76,29 +76,20 @@
         <!-- Post -->
         <section class="post">
           <header class="major">
-            <h1>Eurogaleria</h1>
-            <!-- <p>
+            <span class="date">April 25, 2017</span>
+            <h1>
+              This is a<br />
+              Generic Page
+            </h1>
+            <p>
               Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
               facilisis ante sed etiam magna interdum congue. Lorem ipsum
               dolor<br />
               amet nullam sed etiam veroeros.
-            </p> -->
+            </p>
           </header>
-          <div class="image main">
-            <div>
-              <img src="../img/carrousel_eurogaleria1.png" alt="Imagen 1" />
-            </div>
-            <div>
-              <img src="../img/carrousel_eurogaleria2.png" alt="Imagen 2" />
-            </div>
-            <div>
-              <img src="../img/carrousel_eurogaleria3.png" alt="Imagen 3" />
-            </div>
-            <div>
-              <img src="../img/carrousel_eurogaleria4.png" alt="Imagen 4" />
-            </div>
-          </div>
-          <!-- <p>
+          <div class="image main"><img src="../images/pic01.jpg" alt="" /></div>
+          <p>
             Donec eget ex magna. Interdum et malesuada fames ac ante ipsum
             primis in faucibus. Pellentesque venenatis dolor imperdiet dolor
             mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor
@@ -126,47 +117,9 @@
             Pellentesque venenatis dolor imperdiet dolor mattis sagittis.
             Praesent rutrum sem diam, vitae egestas enim auctor sit amet.
             Pellentesque leo mauris, consectetur id ipsum.
-          </p> -->
+          </p>
         </section>
       </div>
-      <script>
-        const carouselImages = document.querySelector(".carousel-images");
-        const prevButton = document.querySelector(".carousel-button.prev");
-        const nextButton = document.querySelector(".carousel-button.next");
-
-        let currentIndex = 0;
-
-        const updateCarousel = () => {
-          const offset = -currentIndex * 100; // Calcula el desplazamiento
-          carouselImages.style.transform = `translateX(${offset}%)`;
-        };
-
-        // Función para avanzar automáticamente
-        const autoAdvance = () => {
-          currentIndex = (currentIndex + 1) % carouselImages.children.length;
-          updateCarousel();
-        };
-
-        // Botones manuales
-        prevButton.addEventListener("click", () => {
-          currentIndex =
-            (currentIndex - 1 + carouselImages.children.length) %
-            carouselImages.children.length;
-          updateCarousel();
-        });
-
-        nextButton.addEventListener("click", () => {
-          currentIndex = (currentIndex + 1) % carouselImages.children.length;
-          updateCarousel();
-        });
-
-        // Iniciar avance automático cada 3 segundos
-        const interval = setInterval(autoAdvance, 3000);
-
-        // Detener y reiniciar el temporizador si el usuario interactúa
-        prevButton.addEventListener("click", () => clearInterval(interval));
-        nextButton.addEventListener("click", () => clearInterval(interval));
-      </script>
 
       <!-- Footer -->
       <footer id="footer">
