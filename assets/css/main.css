@@ -2249,9 +2249,9 @@ ul.actions.fit.stacked {
   ul.actions:not(.fixed) li > * {
     width: 100%;
   }
-  ul.actions:not(.fixed) li:first-child {
+  /* ul.actions:not(.fixed) li:first-child {
     padding-top: 0;
-  }
+  } */
   ul.actions:not(.fixed) li input[type=submit],
   ul.actions:not(.fixed) li input[type=reset],
   ul.actions:not(.fixed) li input[type=button],
@@ -3546,9 +3546,6 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
     padding: 2rem 2rem 0.1rem 2rem;
   }
   #footer > section.split > section {
-    padding: 2rem 2rem 0.1rem 2rem;
-  }
-  #footer > section.split > section:first-child {
     padding: 2rem 2rem 0.1rem 2rem;
   }
   #footer > section.split > section:last-child {
