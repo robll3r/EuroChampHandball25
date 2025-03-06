@@ -39,7 +39,7 @@
     opacity: 1;
 
     &:not(.hidden) {
-      & + #header + #nav {
+      &+#header+#nav {
         @include vendor("transform", "none");
         opacity: 1;
       }

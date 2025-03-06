@@ -1,11 +1,6 @@
 @import "fontawesome-all.min.css";
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
-/*
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -81,7 +76,8 @@ body {
 }
 
 @media screen and (max-width: 480px) {
-  html, body {
+  html,
+  body {
     min-width: 320px;
   }
 }
@@ -89,14 +85,18 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 body {
   background-color: #1e252d;
 }
-body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+body.is-preload *,
+body.is-preload *:before,
+body.is-preload *:after {
   -moz-animation: none !important;
   -webkit-animation: none !important;
   -ms-animation: none !important;
@@ -105,6 +105,31 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after {
   -webkit-transition: none !important;
   -ms-transition: none !important;
   transition: none !important;
+}
+
+#google_translate_element {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.goog-te-gadget-simple {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+.goog-te-gadget-simple:hover {
+  background-color: #e0e0e0;
+}
+
+/* Oculta el select original */
+.hidden-select {
+  display: none;
 }
 
 /* Type */
@@ -2250,9 +2275,9 @@ ul.actions.fit.stacked {
   ul.actions:not(.fixed) li > * {
     width: 100%;
   }
-  /* ul.actions:not(.fixed) li:first-child {
+  ul.actions:not(.fixed) li:first-child {
     padding-top: 0;
-  } */
+  }
   ul.actions:not(.fixed) li input[type=submit],
   ul.actions:not(.fixed) li input[type=reset],
   ul.actions:not(.fixed) li input[type=button],
@@ -3097,7 +3122,8 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 #main > .post header.major > .date {
   margin-top: -2rem;
 }
-#main > .post header.major > h1, #main > .post header.major h2 {
+#main > .post header.major > h1,
+#main > .post header.major h2 {
   font-size: 4rem;
   line-height: 1.1;
   margin: 0 0 2rem 0;
@@ -3118,7 +3144,8 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
     margin-top: -1rem;
     margin-bottom: 2rem;
   }
-  #main > .post header.major > h1, #main > .post header.major h2 {
+  #main > .post header.major > h1,
+  #main > .post header.major h2 {
     font-size: 2.5rem;
     line-height: 1.2;
     margin: 0 0 1.5rem 0;
@@ -3547,6 +3574,9 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
     padding: 2rem 2rem 0.1rem 2rem;
   }
   #footer > section.split > section {
+    padding: 2rem 2rem 0.1rem 2rem;
+  }
+  #footer > section.split > section:first-child {
     padding: 2rem 2rem 0.1rem 2rem;
   }
   #footer > section.split > section:last-child {

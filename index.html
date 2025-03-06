@@ -9,6 +9,21 @@
   <noscript>
     <link rel="stylesheet" href="assets/css/noscript.css" />
   </noscript>
+  <div id="google_translate_element"></div>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'es',
+        includedLanguages: 'da,de,en,fr,hu,it,no,pl,pt-PT,sv,uk',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      },
+        'google_translate_element'
+      );
+    }
+  </script>
+
+  <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 
 <body class="is-preload">
@@ -16,10 +31,10 @@
   <div id="wrapper" class="fade-in">
     <!-- Intro -->
     <div id="intro" style="height:auto; min-height: 320px">
-      <img src="../img/TITULO-FIN3.png" alt="EuroMasterHandball2025" />
+      <img src="../img/TITULO-FIN3.png" alt="EuroMastersHandball2025" />
       <!-- <h1>
         EUROPEAN<br />
-        MASTER Handball<br />
+        MASTERS Handball<br />
         Sevilla'25
       </h1> -->
       <!-- <p>Handball championships Sevilla 2025</p> -->
@@ -46,6 +61,7 @@
         <li class="active"><a href="index.html">Inicio</a></li>
         <li><a href="pages/document.html">Documentos</a></li>
         <li><a href="pages/sedes.html">Sedes</a></li>
+        <li><a href="pages/teams.html">Equipos</a></li>
         <li>
           <a href="https://visitasevilla.es/" target="_blank" rel="noopener noreferrer">La Ciudad</a>
         </li>
@@ -147,10 +163,9 @@
           </div>
           <ul class="actions" style="justify-content: space-between">
             <li><button type="submit">Enviar</button></li>
-            <!-- justify-content: space-between; -->
             <ul class="icons alt" style="display: flex">
               <li>
-                <a href="https://x.com/vbmsevilla" class="icon brands alt fa-twitter" target="_blank"
+                <a href="https://x.com/vbmsevilla" class="icon brands fa-x" target="_blank"
                   rel="noopener noreferrer"><span class="label">Twitter</span></a>
               </li>
               <li>
@@ -176,7 +191,6 @@
       <ul>
         <img src="../img/TITULO-FIN3.png" alt="EuroMasterHandball2025" style="width: 320px;" />
         <li>&copy; EuroMasterHandball2025</li>
-        <!-- <li>Design: <a href="">ROLLER</a></li> -->
       </ul>
     </div>
   </div>
