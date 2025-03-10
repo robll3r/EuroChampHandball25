@@ -110,7 +110,7 @@ body.is-preload *:after {
 #google_translate_element {
   position: fixed;
   top: 20px;
-  right: 20px;
+  left: 20px;
   z-index: 1000;
 }
 
@@ -122,14 +122,8 @@ body.is-preload *:after {
   font-size: 14px;
   color: #333;
 }
-
 .goog-te-gadget-simple:hover {
   background-color: #e0e0e0;
-}
-
-/* Oculta el select original */
-.hidden-select {
-  display: none;
 }
 
 /* Type */
@@ -2274,9 +2268,6 @@ ul.actions.fit.stacked {
   }
   ul.actions:not(.fixed) li > * {
     width: 100%;
-  }
-  ul.actions:not(.fixed) li:first-child {
-    padding-top: 0;
   }
   ul.actions:not(.fixed) li input[type=submit],
   ul.actions:not(.fixed) li input[type=reset],
