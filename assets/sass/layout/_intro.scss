@@ -23,7 +23,7 @@
 
   img {
     width: 100%;
-    max-width: 1236px;
+    max-width: 1536px;
   }
 
   h1 {
@@ -38,7 +38,7 @@
     text-align: center;
   }
 
-  & + #header {
+  &+#header {
     margin-top: -20rem;
 
     .logo {
@@ -51,14 +51,12 @@
   &.hidden {
     @include vendor("pointer-events", "none");
     @include vendor("transform", "translateY(2rem)");
-    @include vendor(
-      "transition",
-      ("opacity 0.5s ease", "transform 0.5s ease", "visibility 0.5s")
-    );
+    @include vendor("transition",
+      ("opacity 0.5s ease", "transform 0.5s ease", "visibility 0.5s"));
     opacity: 0;
     visibility: hidden;
 
-    & + #header {
+    &+#header {
       .logo {
         @include vendor("transform", "translateY(0)");
         opacity: 1;
@@ -72,31 +70,45 @@
     opacity: 0;
 
     &:not(.hidden) {
-      & + #header + #nav {
+      &+#header+#nav {
         @include vendor("transform", "translateY(4rem)");
         opacity: 0;
       }
     }
   }
 
+  @include breakpoint("<=xlarge") {
+    min-height: 90vh;
+
+    img {
+      width: 100%;
+      max-width: 1152px;
+    }
+  }
+
+  @include breakpoint("<=large") {
+    min-height: 80vh;
+
+    img {
+      width: 100%;
+      max-width: 1056px;
+    }
+  }
+
   @include breakpoint("<=medium") {
     @include padding(_size(padding) * 2, _size(padding) * 2);
-    min-height: 90vh;
+    min-height: 70vh;
 
     p {
       br {
         display: none;
       }
     }
-
-    & + #header {
-      margin-top: -14rem;
-    }
   }
 
   @include breakpoint("<=small") {
     @include padding(_size(padding) * 1.5, _size(padding) * 1);
-    min-height: 80vh;
+    min-height: 40vh;
 
     h1 {
       font-size: 3.25rem;

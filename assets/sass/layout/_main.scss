@@ -75,9 +75,56 @@
 		}
 	}
 
+	.post-categories {
+		@include padding((_size(padding) * 1), (_size(padding) * 1));
+
+		header {
+			&.major {
+				>.date {
+					margin-top: -2rem;
+				}
+
+				>h1,
+				h2 {
+					font-size: 4rem;
+					line-height: 1.1;
+					margin: _size(element-margin) 0 _size(element-margin) 0;
+				}
+			}
+		}
+
+		&.featured {
+			text-align: center;
+		}
+
+		@include breakpoint('<=large') {
+			@include padding((_size(padding) * 1), (_size(padding) * 1));
+		}
+
+		@include breakpoint('<=small') {
+			@include padding((_size(padding) * 1), (_size(padding) * 1));
+
+			header {
+				&.major {
+					>.date {
+						margin-top: -1rem;
+						margin-bottom: _size(element-margin);
+					}
+
+					>h1,
+					h2 {
+						font-size: 2.5rem;
+						line-height: 1.2;
+						margin: 0 0 (_size(element-margin) * 0.75) 0;
+					}
+				}
+			}
+		}
+	}
+
 	>.posts {
 		@include fixed-grid((columns: 2,
-				gutters: (_size(padding) * 4),
+				gutters: (_size(padding) * 2),
 				horizontal-align: center,
 				vertical-align: flex-start,
 				flush: false));

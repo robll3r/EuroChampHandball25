@@ -7,7 +7,7 @@
 /* Wrapper */
 #wrapper {
   background-color: #212931;
-  background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../img/FONDO_AZULEJOS_AZUL2.jpeg");
+  background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../assets/img/FONDO_AZULEJOS_AZUL2.jpeg");
   background-size: auto, auto, 100% auto;
   background-position: center, center, top center;
   background-repeat: repeat, no-repeat, no-repeat;
@@ -28,5 +28,3 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
   transform: none;
   opacity: 1;
 }
-
-/*# sourceMappingURL=noscript.css.map */

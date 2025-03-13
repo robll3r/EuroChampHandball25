@@ -12,7 +12,7 @@
   z-index: 1;
   overflow: hidden;
 
-  > .bg {
+  >.bg {
     position: absolute;
     top: 0;
     left: 0;
@@ -21,7 +21,7 @@
     background-color: _palette(wrapper-bg);
     background-image: url("../../images/overlay.png"),
       linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-      url("../../img/FONDO_AZULEJOS_AZUL2.jpg");
+      url("../../assets/img/FONDO_AZULEJOS_AZUL2.jpg");
     background-size: auto, auto, 100% auto;
     background-position: center, center, top center;
     background-repeat: repeat, no-repeat, no-repeat;
@@ -59,7 +59,7 @@
   }
 
   @include orientation(portrait) {
-    > .bg {
+    >.bg {
       background-size: auto, auto, auto 175%;
     }
   }
