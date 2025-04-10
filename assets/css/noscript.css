@@ -1,23 +1,16 @@
 @import "font-awesome.min.css";
-/*
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-/* Wrapper */
 #wrapper {
   background-color: #212931;
-  background-image: url("../../assets/img/skins/FONDO_AZULEJOS_AZUL2.jpeg"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../assets/img/skins/FONDO_AZULEJOS_AZUL2.jpeg");
-  background-size: auto, auto, 100% auto;
-  background-position: center, center, top center;
-  background-repeat: repeat, no-repeat, no-repeat;
-  background-attachment: fixed, fixed, fixed;
+  background-image: url("../../assets/img/skins/FONDO_AZULEJOS_AZUL2.jpeg");
+  background-size: 100% auto;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 #wrapper.fade-in:before {
   display: none;
 }
 
-/* Intro */
 body.is-preload #intro {
   opacity: 1;
 }
