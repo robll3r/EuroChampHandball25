@@ -17,9 +17,9 @@
 
 #wrapper {
   background-color: _palette(wrapper-bg);
-  background-image: url("../../assets/img/FONDO_AZULEJOS_AZUL2.jpeg"),
+  background-image: url("../../assets/img/skins/FONDO_AZULEJOS_AZUL2.jpeg"),
     linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-    url("../../assets/img/FONDO_AZULEJOS_AZUL2.jpeg");
+    url("../../assets/img/skins/FONDO_AZULEJOS_AZUL2.jpeg");
   background-size: auto, auto, 100% auto;
   background-position: center, center, top center;
   background-repeat: repeat, no-repeat, no-repeat;
@@ -39,7 +39,7 @@
     opacity: 1;
 
     &:not(.hidden) {
-      &+#header+#nav {
+      & + #header + #nav {
         @include vendor("transform", "none");
         opacity: 1;
       }
